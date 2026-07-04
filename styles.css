@@ -91,6 +91,27 @@ button { color: inherit; }
 .text-button:hover::after, .menu-button:hover::after, .inline-link:hover::after { right: 0; }
 .menu-button { display: flex; align-items: center; gap: 10px; }
 .menu-button span.dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.lang-toggle {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  min-width: 42px;
+  height: 30px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  transition: background .25s, border-color .25s, color .25s, transform .25s;
+}
+.lang-toggle:hover { transform: translateY(-1px); }
+.lang-toggle.is-active {
+  background: #69c36d;
+  border-color: #69c36d;
+  color: #071006;
+}
 
 .menu-overlay {
   position: fixed; z-index: 950; inset: 0; color: var(--paper); background: var(--ink);
