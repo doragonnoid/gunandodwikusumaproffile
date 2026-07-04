@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Portfolio Gunando Dwi Kusuma, Informatics / IT student, web developer, and digital creator focused on web interfaces, game worlds, VR, IoT, and 3D content." name="description"/>
+<meta content="#070907" name="theme-color"/>
+<title>Gunando Dwi Kusuma — Interactive Digital Portfolio</title>
+<link href="assets/logo.jpg" rel="icon"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer src="script.js"></script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
+</head>
+<body class="outreach-home">
+<a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+<div aria-hidden="true" class="preloader preloader--signal">
+  <div class="preloader__inner">
+    <div class="signal-loader__meta"><span>GDK / PORTFOLIO</span><span>EST. 2021</span></div>
+    <div class="preloader__brand">Gunando Dwi Kusuma</div>
+    <div class="preloader__row"><div class="preloader__bar"><span></span></div><div class="preloader__count">000%</div></div>
+  </div>
+</div>
+<div aria-hidden="true" class="cursor"></div><div aria-hidden="true" class="cursor-dot"></div>
+<div aria-hidden="true" class="scroll-progress"></div>
+<canvas aria-hidden="true" class="signal-stars" id="signalStars"></canvas>
+<div aria-hidden="true" class="signal-noise"></div>
+
+<header class="site-header signal-header">
+  <a aria-label="Gunando Dwi Kusuma home" class="brand" href="index.html">GDK<span class="brand__long"> / Gunando Dwi Kusuma</span></a>
+  <div class="header-center"><span class="live-dot"></span> available for collaboration · Jakarta, Indonesia</div>
+  <div class="header-actions">
+    <a class="text-button" href="contact.html">contact</a>
+    <button aria-controls="menuOverlay" aria-expanded="false" class="menu-button" data-menu-open type="button"><span class="dot"></span>menu</button>
+  </div>
+</header>
+
+<aside aria-label="Menu utama" class="menu-overlay signal-menu" id="menuOverlay">
+  <div class="menu-overlay__top">
+    <a class="brand" href="index.html">Gunando Dwi Kusuma</a>
+    <button class="menu-button" data-menu-close type="button"><span class="dot"></span>close</button>
+  </div>
+  <div class="menu-overlay__grid">
+    <nav class="menu-overlay__nav">
+      <div class="menu-overlay__label">Navigate portfolio</div>
+      <ul class="menu-list">
+        <li><a href="index.html"><span>Home</span><small>00</small></a></li>
+        <li><a href="about.html"><span>Biography</span><small>01</small></a></li>
+        <li><a href="experiences.html"><span>Experiences</span><small>02</small></a></li>
+        <li><a href="projects.html"><span>Projects</span><small>03</small></a></li>
+        <li><a href="certificates.html"><span>E-Certificates</span><small>04</small></a></li>
+        <li><a href="contact.html"><span>Contact</span><small>05</small></a></li>
+      </ul>
+      <div class="menu-overlay__meta"><span>Digital creator · developer</span><span>Available for collaboration</span></div>
+    </nav>
+    <div class="menu-overlay__visual">
+      <img alt="Gunando Dwi Kusuma" src="assets/profile-wide.jpg"/>
+      <div class="menu-visual__telemetry"><span>GDK PORTFOLIO</span><span>STATUS / AVAILABLE</span></div>
+      <p class="menu-quote">Clear interfaces, interactive systems, and creative digital experiments.</p>
+    </div>
+  </div>
+</aside>
+
+<nav aria-label="Navigasi chapter" class="chapter-rail" data-chapter-rail>
+  <a href="#origin" data-chapter-link="origin"><span>00</span><b>Origin</b></a>
+  <a href="#identity" data-chapter-link="identity"><span>01</span><b>Identity</b></a>
+  <a href="#trajectory" data-chapter-link="trajectory"><span>02</span><b>Trajectory</b></a>
+  <a href="#capabilities" data-chapter-link="capabilities"><span>03</span><b>Capabilities</b></a>
+  <a href="#projects" data-chapter-link="projects"><span>04</span><b>Projects</b></a>
+  <a href="#classification" data-chapter-link="classification"><span>05</span><b>Profile</b></a>
+  <a href="#transmission" data-chapter-link="transmission"><span>06</span><b>Contact</b></a>
+</nav>
+
+<div class="signal-hud" aria-hidden="true">
+  <div><small>PORTFOLIO</small><strong>GDK</strong></div>
+  <div><small>SECTION</small><strong data-chapter-counter>00 / 06</strong></div>
+</div>
+
+<div class="outreach-frame" aria-hidden="true">
+  <div class="outreach-frame__top">
+    <div class="outreach-mini-wordmark">gunando</div>
+    <div class="outreach-frame__chapter">
+      <span data-frame-object>Portfolio 000</span>
+      <strong data-frame-title>Origin</strong>
+    </div>
+    <div class="outreach-mini-wordmark outreach-mini-wordmark--right">gunando</div>
+  </div>
+  <div class="outreach-thumbs">
+    <span class="is-active"></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="outreach-side-dots outreach-side-dots--left"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="outreach-side-dots outreach-side-dots--right"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="outreach-bottom">
+    <div class="outreach-bottom__label">PORTFOLIO</div>
+    <div class="outreach-timeline" data-outreach-timeline><span></span></div>
+    <div class="outreach-bottom__meta">PROJECTS / CONTACT / CV</div>
+  </div>
+  <div class="outreach-compass"><span></span><span></span><span></span><span></span></div>
+</div>
+
+<main id="main">
+  <section aria-label="Intro portfolio Gunando Dwi Kusuma" class="signal-hero signal-chapter" id="origin" data-chapter="00" data-frame-title="Home" data-frame-object="Portfolio 000">
+    <div class="signal-hero__media">
+      <video autoplay loop muted playsinline poster="assets/profile-wide.jpg"><source src="assets/hero-video.mp4" type="video/mp4"/></video>
+    </div>
+    <div class="signal-hero__veil"></div>
+    <div class="signal-hero__earth" aria-hidden="true"></div>
+    <audio id="ambientAudio" loop preload="none"><source src="assets/ambient.mp3"/></audio>
+
+    <div class="signal-hero__topline"><span>PERSONAL PORTFOLIO</span><span>WEB · GAME · VR · IOT · 3D</span></div>
+    <p class="signal-hero__spaced">Informatics / IT student, web developer, and digital creator building interfaces, game worlds, VR systems, IoT prototypes, and 3D content.</p>
+    <div class="outreach-object-code" aria-hidden="true">GDK</div>
+    <div class="signal-fragment signal-fragment--one" aria-hidden="true"><img src="assets/model-02.png" alt=""/></div>
+    <div class="signal-fragment signal-fragment--two" aria-hidden="true"><img src="assets/blender-animation-pose.png" alt=""/></div>
+
+    <div class="signal-object-stage" data-object-stage>
+      <div class="signal-orbit signal-orbit--a"></div>
+      <div class="signal-orbit signal-orbit--b"></div>
+      <div class="signal-object" data-signal-object role="img" aria-label="Objek visual interaktif identitas Gunando Dwi Kusuma">
+        <div class="signal-object__face signal-object__face--front"><img alt="Doragonnoid virtual character with dragon artwork" src="assets/model-01.png"/></div>
+        <div class="signal-object__face signal-object__face--back"><img alt="Gunando Dwi Kusuma" src="assets/profile.jpg"/></div>
+        <span class="signal-object__glow"></span>
+      </div>
+      <div class="signal-object__label signal-object__label--left"><small>ROLE</small><strong>WEB DEVELOPER</strong></div>
+      <div class="signal-object__label signal-object__label--right"><small>FOCUS</small><strong>CODE / GAME / IOT</strong></div>
+    </div>
+
+    <div class="signal-hero__title-wrap">
+      <p class="signal-hero__kicker">Informatics / IT Student · Web Developer · Digital Creator</p>
+      <h1 class="signal-hero__title"><span>Gunando</span><em>Dwi Kusuma</em></h1>
+      <div class="hero-professional-actions" aria-label="Aksi utama">
+        <a href="#projects">View Projects</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="Gunando_Dwi_Kusuma_CV.html" download>Download CV</a>
+      </div>
+    </div>
+
+    <div class="signal-discovery-card" aria-label="Status pengalaman website">
+      <div><span>ROLE</span><strong>WEB DEVELOPER</strong></div>
+      <div><span>FIELD</span><strong>INFORMATICS / IT</strong></div>
+      <div><span>STATUS</span><strong>OPEN TO PROJECTS</strong></div>
+    </div>
+
+    <div class="signal-hero__controls">
+      <button aria-label="Nyalakan audio" class="signal-control" data-sound-toggle type="button">
+        <span class="signal-control__icon">◖</span><span data-sound-label>optional ambient audio</span>
+      </button>
+      <div class="signal-control signal-control--hint"><span class="signal-control__icon">↔</span><span>interactive visual object</span></div>
+      <a class="signal-control signal-control--scroll" href="#identity"><span>start reading</span><span>↓</span></a>
+    </div>
+  </section>
+
+  <section class="signal-section signal-section--paper signal-chapter signal-section--gradient-a" id="identity" data-chapter="01" data-frame-title="Profile" data-frame-object="Section 001">
+    <header class="chapter-heading reveal">
+      <div><span>SECTION 01</span><span>PROFILE</span></div>
+      <p>A concise profile: education, role, creative identity, and the kind of digital work Gunando builds.</p>
+    </header>
+
+    <div class="identity-layout">
+      <div class="identity-portrait reveal">
+        <div class="identity-portrait__frame"><img alt="Portrait Gunando Dwi Kusuma" data-parallax="0.025" src="assets/profile-wide.jpg"/></div>
+        <div class="identity-portrait__caption"><span>Gunando Dwi Kusuma</span><span>Online alias: Doragonnoid</span></div>
+      </div>
+      <div class="identity-copy">
+        <div class="eyebrow reveal">origin / real-world profile</div>
+        <h2 class="signal-display reveal reveal-delay-1">The person behind the work.</h2>
+        <p class="signal-lead reveal reveal-delay-2">Gunando Dwi Kusuma is an Informatics / IT student, web developer, gamer, and independent digital creator. Doragonnoid is the online nickname used to connect technology, character, and storytelling.</p>
+        <p class="outreach-spaced-copy reveal reveal-delay-2">The portfolio focuses on practical digital making: responsive websites, Roblox game environments, Android app concepts, Blender animation studies, and VR-IoT prototypes.</p>
+        <div class="data-table reveal reveal-delay-3">
+          <div><span>Primary field</span><strong>Informatics / IT</strong></div>
+          <div><span>Creative identity</span><strong>Doragonnoid</strong></div>
+          <div><span>Location</span><strong>Jakarta, Indonesia</strong></div>
+          <div><span>Current status</span><strong>Building &amp; exploring</strong></div>
+        </div>
+        <a class="signal-link reveal" href="about.html">open complete biography <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="signal-section signal-section--transcript signal-chapter" id="trajectory" data-chapter="02" data-frame-title="Journey" data-frame-object="Section 002">
+    <header class="chapter-heading chapter-heading--light reveal">
+      <div><span>SECTION 02</span><span>JOURNEY</span></div>
+      <p>A cleaner timeline of how the portfolio moved from gaming identity into web, game, VR, IoT, and 3D work.</p>
+    </header>
+
+    <div class="transcript-grid">
+      <div class="transcript-copy reveal">
+        <div class="eyebrow">learning path / practice</div>
+        <h2 class="signal-display">Curiosity becomes working projects.</h2>
+        <p class="signal-lead">Gunando learns by building: interfaces, game spaces, 3D visuals, and connected prototypes that can be explained clearly.</p>
+        <div class="outreach-fact reveal reveal-delay-1">
+          <span>Professional focus</span>
+          <p>Based in Jakarta, focused on web interfaces, interactive systems, creative content, and technology projects with clear user flows.</p>
+        </div>
+      </div>
+      <div class="thread-stack" aria-label="Catatan transmisi portfolio">
+        <article class="thread-card thread-card--email reveal">
+          <div class="thread-card__meta"><span>CONTACT RECORD</span><span>PORTFOLIO PROFILE</span></div>
+          <div class="email-lines">
+            <p><b>From:</b> gunandodwik@gmail.com</p>
+            <p><b>To:</b> gunandodwii@gmail.com</p>
+            <p><b>Subject:</b> Project collaboration / portfolio review</p>
+          </div>
+          <h3>Clear profile. Visible work.</h3>
+          <p>Verified: Informatics / IT student, web developer, gamer, and digital creator with projects across web, Roblox, Android concepts, Blender, VR, and IoT.</p>
+        </article>
+        <article class="thread-card reveal reveal-delay-1">
+          <div class="thread-card__meta"><span>FROM: STUDENT</span><span>2021</span></div>
+          <h3>Started from games and digital curiosity.</h3>
+          <p>Informatics / IT becomes the base coordinate: logic, process, data, and how people actually use digital products.</p>
+        </article>
+        <article class="thread-card thread-card--offset reveal reveal-delay-2">
+          <div class="thread-card__meta"><span>FROM: DORAGONNOID</span><span>2023</span></div>
+          <h3>Identity becomes an interface.</h3>
+          <p>Online character, content, and visual language turn technical work into something easier to remember.</p>
+        </article>
+        <article class="thread-card reveal reveal-delay-3">
+          <div class="thread-card__meta"><span>FROM: BUILDER</span><span>NOW</span></div>
+          <h3>Projects become evidence.</h3>
+          <p>Web, Roblox, Blender, VR, and IoT projects show the same habit: make, test, refine, and tell the story clearly.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="hypothesis-band reveal" aria-label="Fokus karya">
+      <span>Interface</span>
+      <span>Game</span>
+      <span>XR</span>
+      <span>Device</span>
+      <span>Model</span>
+      <span>Portfolio</span>
+    </div>
+  </section>
+
+  <section class="signal-section signal-section--dark signal-chapter signal-section--gradient-b" id="capabilities" data-chapter="03" data-frame-title="Skills" data-frame-object="Section 003">
+    <header class="chapter-heading chapter-heading--light reveal">
+      <div><span>SECTION 03</span><span>SKILLS</span></div>
+      <p>Skills are grouped by output, with tools and project evidence shown directly instead of vague claims.</p>
+    </header>
+
+    <div class="capability-intro">
+      <h2 class="signal-display reveal">One profile.<br/><em>Multiple outputs.</em></h2>
+      <p class="signal-lead reveal reveal-delay-1">The portfolio combines HTML/CSS/JavaScript interfaces, Roblox game design, Android app concepts, Blender animation, Unity XR, and IoT components.</p>
+    </div>
+
+    <div class="capability-list" data-accordion>
+      <article class="capability-row is-open reveal">
+        <button type="button" aria-expanded="true"><span>01</span><strong>Web Development</strong><small>Interface · Front-end · Interaction</small><i>+</i></button>
+        <div class="capability-row__panel"><p>HTML, CSS, JavaScript, responsive layout, semantic structure, interaction polish, and clear navigation for portfolio and landing-page style websites.</p><a href="experiences.html#skills">view technical skills ↗</a></div>
+      </article>
+      <article class="capability-row reveal">
+        <button type="button" aria-expanded="false"><span>02</span><strong>Game &amp; VR Systems</strong><small>Roblox · Unity · XR</small><i>+</i></button>
+        <div class="capability-row__panel"><p>Roblox Studio game environments, inventory, movement, vehicles, economy loops, object interaction, and Unity XR experiments.</p><a href="projects.html">explore game projects ↗</a></div>
+      </article>
+      <article class="capability-row reveal">
+        <button type="button" aria-expanded="false"><span>03</span><strong>IoT Integration</strong><small>Sensor · Controller · Real-time data</small><i>+</i></button>
+        <div class="capability-row__panel"><p>Prototype connection between virtual interaction and physical components including LED, buzzer, servo, and DHT11 sensor data.</p><a href="backroom-end.html">open VR–IoT case ↗</a></div>
+      </article>
+      <article class="capability-row reveal">
+        <button type="button" aria-expanded="false"><span>04</span><strong>3D &amp; Content</strong><small>Blender · Video · Virtual identity</small><i>+</i></button>
+        <div class="capability-row__panel"><p>Blender character animation with armature setup, Pose Mode keyframes, timing, camera framing, and digital persona visuals.</p><a href="simple-animation-blender.html">view animation project ↗</a></div>
+      </article>
+    </div>
+
+    <div class="telemetry-strip reveal">
+      <div><strong data-counter="2021">0</strong><span>journey initiated</span></div>
+      <div><strong data-counter="4" data-suffix="+">0</strong><span>creative disciplines</span></div>
+      <div><strong data-counter="4">0</strong><span>featured projects</span></div>
+      <div><strong data-counter="24" data-suffix="/7">0</strong><span>curiosity mode</span></div>
+    </div>
+  </section>
+
+  <section class="project-observatory signal-chapter" id="projects" data-chapter="04" data-frame-title="Projects" data-frame-object="Section 004">
+    <div class="project-observatory__intro signal-section">
+      <header class="chapter-heading chapter-heading--light reveal">
+        <div><span>SECTION 04</span><span>FEATURED PROJECTS</span></div>
+        <p>Four projects with clearer role, tools, features, and result summaries.</p>
+      </header>
+      <h2 class="signal-display reveal">Selected work<br/>with concrete evidence.</h2>
+    </div>
+
+    <div class="project-observation" data-project-observation>
+      <article class="observation-card" data-tilt-card>
+        <div class="observation-card__media"><img alt="Relaxplace Doragonnoid Roblox project" src="assets/relaxplace-dragon-car.png"/></div>
+        <div class="observation-card__shade"></div>
+        <div class="observation-card__content">
+          <div class="observation-card__index"><span>OBJECT / 01</span><span>ROBLOX GAME</span></div>
+          <h3>Relaxplace<br/><em>Doragonnoid</em></h3>
+          <p><b>Role:</b> game creator. <b>Tools:</b> Roblox Studio. <b>Features:</b> open-world relaxation, vehicles, creature collection, inventory, selling, and simple economy loop.</p>
+          <a href="relaxplace-doragonnoid.html">inspect project <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="observation-card" data-tilt-card>
+        <div class="observation-card__media"><img alt="Reflection Android application" src="assets/reflection-dashboard.png"/></div>
+        <div class="observation-card__shade"></div>
+        <div class="observation-card__content">
+          <div class="observation-card__index"><span>OBJECT / 02</span><span>ANDROID APPLICATION</span></div>
+          <h3>Reflection</h3>
+          <p><b>Role:</b> app concept and UI designer. <b>Focus:</b> accessible self-reflection flow with guided forms, AI support, progress, privacy, and inclusive settings.</p>
+          <a href="reflection.html">inspect project <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="observation-card" data-tilt-card>
+        <div class="observation-card__media"><img alt="Simple Animation Blender" src="assets/blender-animation-overview.png"/></div>
+        <div class="observation-card__shade"></div>
+        <div class="observation-card__content">
+          <div class="observation-card__index"><span>OBJECT / 03</span><span>3D ANIMATION</span></div>
+          <h3>Character Animation<br/><em>Blender Study</em></h3>
+          <p><b>Role:</b> animator and editor. <b>Tools:</b> Blender. <b>Process:</b> armature setup, Pose Mode, keyframes, timing, camera composition, and rendered presentation.</p>
+          <a href="simple-animation-blender.html">inspect project <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="observation-card" data-tilt-card>
+        <div class="observation-card__media"><img alt="Backroom End VR and IoT" src="assets/backroom-end-overview.png"/></div>
+        <div class="observation-card__shade"></div>
+        <div class="observation-card__content">
+          <div class="observation-card__index"><span>OBJECT / 04</span><span>VR &amp; IoT SYSTEM</span></div>
+          <h3>Backroom<br/><em>End</em></h3>
+          <p><b>Role:</b> prototype builder. <b>Tools:</b> Unity XR and IoT components. <b>System:</b> VR interactions connected with LED, buzzer, servo, and DHT11 sensor data.</p>
+          <a href="backroom-end.html">inspect project <span>↗</span></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="project-observatory__footer"><a class="signal-link signal-link--light" href="projects.html">open complete project archive <span>↗</span></a></div>
+  </section>
+
+  <section class="signal-section signal-section--quote signal-chapter" id="classification" data-chapter="05" data-frame-title="Profile" data-frame-object="Section 005">
+    <header class="chapter-heading chapter-heading--light reveal">
+      <div><span>SECTION 05</span><span>PROFILE SUMMARY</span></div>
+      <p>A stable identity for recruiters, collaborators, and viewers: Gunando first, Doragonnoid as the online creative persona.</p>
+    </header>
+    <blockquote class="outreach-quote reveal">
+      <p>“Good digital work should be clear enough to use, strong enough to remember, and honest about the process behind it.”</p>
+      <cite>Gunando Dwi Kusuma / Doragonnoid</cite>
+    </blockquote>
+    <div class="classification-list reveal reveal-delay-1" aria-label="Klasifikasi akhir">
+      <span>Student</span>
+      <span>Developer</span>
+      <span>Gamer</span>
+      <span>Creator</span>
+      <span>Explorer</span>
+    </div>
+  </section>
+
+  <section class="signal-section signal-section--paper signal-chapter signal-section--gradient-c" id="transmission" data-chapter="06" data-frame-title="Contact" data-frame-object="Section 006">
+    <header class="chapter-heading reveal">
+      <div><span>SECTION 06</span><span>CONTACT</span></div>
+      <p>A practical contact section for web projects, interactive prototypes, digital content, and collaboration briefs.</p>
+    </header>
+
+    <div class="transmission-layout">
+      <div class="transmission-copy">
+        <div class="eyebrow reveal">working philosophy</div>
+        <h2 class="signal-display reveal reveal-delay-1">Build clearly.<br/><em>Present professionally.</em></h2>
+        <p class="signal-lead reveal reveal-delay-2">The goal is to combine usable interfaces, technical curiosity, and a memorable visual identity without losing clarity.</p>
+      </div>
+      <div class="message-log reveal">
+        <div class="message-log__header"><span>CONTACT</span><span>STATUS / AVAILABLE</span></div>
+        <div class="message-log__meta"><span>FROM: GUNANDO DWI KUSUMA</span><span>TO: COLLABORATOR / RECRUITER</span></div>
+        <p>I am open to website projects, interactive prototypes, game and VR experiments, digital content, and collaborations that connect technology with creative storytelling.</p>
+        <div class="message-log__signature">— Gunando Dwi Kusuma</div>
+      </div>
+    </div>
+
+    <div class="contact-terminal reveal">
+      <div><span>READY TO TALK?</span><strong>Send a clear project brief.</strong></div>
+      <a class="contact-terminal__button" href="contact.html"><span>contact now</span><b>↗</b></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer signal-footer">
+  <div class="signal-footer__top"><span>GUNANDO DWI KUSUMA</span><span>PORTFOLIO READY</span></div>
+  <h2 class="footer-title">stay curious.</h2>
+  <div class="footer-grid">
+    <p>Portfolio personal Gunando Dwi Kusuma—dikenal secara online sebagai Doragonnoid—yang menggabungkan pengembangan web, game, VR, IoT, animasi, dan eksperimen digital.</p>
+    <nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a><a href="about.html">Biography</a><a href="experiences.html">Experiences</a><a href="projects.html">Projects</a><a href="certificates.html">E-Certificates</a><a href="contact.html">Connect</a></nav>
+    <nav aria-label="Social links" class="footer-nav"><a href="https://www.youtube.com/@doragonnoid_gunando_nava" rel="noopener" target="_blank">YouTube ↗</a><a href="https://www.instagram.com/doragonnoid_dwi_nava?igsh=MXVrMmJzcGdueThnNA==" rel="noopener" target="_blank">Instagram ↗</a><a href="https://www.tiktok.com/@doragonnoid_dwi_nava?_r=1&amp;_t=ZS-97iYIrTE72y" rel="noopener" target="_blank">TikTok ↗</a><a href="https://www.linkedin.com/in/gunando-dwi-kusuma-a0ba12266?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener" target="_blank">LinkedIn ↗</a></nav>
+  </div>
+  <div class="footer-bottom"><span>© <span data-year></span> Gunando Dwi Kusuma</span><span>Built as a professional portfolio for projects, collaboration, and creative technology work.</span></div>
+</footer>
+
+</body>
+</html>
