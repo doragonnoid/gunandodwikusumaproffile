@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Backroom End adalah proyek integrasi Virtual Reality dan Internet of Things karya Gunando Dwi Kusuma dengan locomotion VR, interaksi objek, kontrol LED, buzzer, servo, dan tampilan data sensor.">
+  <meta name="theme-color" content="#14191d">
+  <title>Backroom End — Detail Project</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#main">Lewati ke konten utama</a>
+<div class="preloader" aria-hidden="true"><div class="preloader__inner"><div class="preloader__brand">Gunando Dwi Kusuma</div><div class="preloader__row"><div class="preloader__bar"><span></span></div><div class="preloader__count">000%</div></div></div></div>
+<div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div><div class="scroll-progress" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Gunando Dwi Kusuma home">Gunando Dwi Kusuma</a>
+  <div class="header-center"><a href="projects.html" class="header-back-link">projects</a> · backroom end</div>
+  <div class="header-actions"><a class="text-button" href="contact.html">contact</a><button class="menu-button" type="button" data-menu-open aria-expanded="false" aria-controls="menuOverlay"><span class="dot"></span>menu</button></div>
+</header>
+<aside class="menu-overlay" id="menuOverlay" aria-label="Menu utama">
+  <div class="menu-overlay__top"><a class="brand" href="index.html">Gunando Dwi Kusuma</a><button class="menu-button" type="button" data-menu-close><span class="dot"></span>close</button></div>
+  <div class="menu-overlay__grid">
+    <nav class="menu-overlay__nav">
+      <ul class="menu-list"><li><a href="index.html"><span>Home</span><small>01</small></a></li><li><a href="about.html"><span>Biography</span><small>02</small></a></li><li><a href="experiences.html"><span>Experiences</span><small>03</small></a></li><li><a href="projects.html" aria-current="page"><span>Projects</span><small>04</small></a></li><li><a href="certificates.html"><span>E-Certificates</span><small>05</small></a></li>
+        <li><a href="contact.html"><span>Connect</span><small>06</small></a></li></ul>
+      <div class="menu-overlay__meta"><span>Jakarta · Indonesia</span><span>Available for collaboration</span></div>
+    </nav>
+    <div class="menu-overlay__visual"><img src="assets/backroom-end-controller.png" alt="XR controller dalam proyek Backroom End"><p class="menu-quote">A VR and IoT prototype that connects virtual interaction with real-world actuators and sensor feedback.</p></div>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="page-hero project-page-hero backroom-page-hero">
+    <div class="page-hero__media"><img src="assets/backroom-end-overview.png" alt="Scene laboratorium virtual Backroom End pada Unity"></div>
+    <div class="eyebrow">virtual reality · internet of things · unity xr</div>
+    <h1><span>Backroom</span><em>End</em></h1>
+    <p class="page-hero__lead">Prototipe VR berbasis Unity yang menghubungkan pergerakan, interaksi objek, dan controller virtual dengan sistem IoT untuk mengendalikan aktuator serta menampilkan data sensor.</p>
+  </section>
+
+  <section class="section section--paper2">
+    <div class="project-overview-grid">
+      <div><div class="eyebrow reveal">project overview</div><h2 class="display display--small reveal">Menghubungkan ruang virtual dengan perangkat nyata.</h2></div>
+      <div class="project-overview-copy reveal reveal-delay-1">
+        <p class="lead">Backroom End adalah proyek eksperimental Virtual Reality dan Internet of Things yang dibangun di Unity menggunakan sistem XR.</p>
+        <p class="copy">Pemain menjelajahi lingkungan laboratorium futuristik melalui teleportation dan snap turn, menggunakan aset tangan kiri dan kanan, serta berinteraksi dengan objek fisika seperti bola basket. Sistem VR juga dirancang untuk mengirim perintah ke perangkat IoT agar dapat menyalakan LED, buzzer, atau servo. Sebaliknya, data suhu dari sensor DHT11 diterima dan ditampilkan kembali pada monitor di dalam ruang virtual.</p>
+        <div class="project-tags" aria-label="Project categories"><span>Unity</span><span>Virtual Reality</span><span>XR Interaction Toolkit</span><span>IoT</span><span>Sensor Data</span><span>Android XR</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink" id="features">
+    <div class="eyebrow reveal">vr features</div>
+    <div class="grid-2 align-end"><h2 class="display display--small reveal">Pergerakan dan interaksi yang dirancang untuk pengalaman XR.</h2><p class="copy reveal reveal-delay-1">Fitur VR berfokus pada locomotion yang nyaman, representasi tangan, interaksi fisika, dan komunikasi dua arah dengan sistem IoT.</p></div>
+    <div class="game-feature-grid backroom-feature-grid">
+      <article class="game-feature reveal"><span>01</span><h3>Snap Turn</h3><p>Pemain dapat memutar arah pandang dalam sudut tertentu melalui controller, sehingga navigasi VR terasa cepat dan mengurangi kebutuhan rotasi fisik.</p></article>
+      <article class="game-feature reveal reveal-delay-1"><span>02</span><h3>Teleportation</h3><p>Sistem teleportation memungkinkan pemain berpindah ke titik yang valid pada area permainan tanpa harus berjalan terus-menerus di ruang nyata.</p></article>
+      <article class="game-feature reveal"><span>03</span><h3>Left &amp; Right Hand Assets</h3><p>Aset tangan kiri dan kanan merepresentasikan controller pengguna di dunia virtual dan menjadi dasar untuk memilih serta memegang objek.</p></article>
+      <article class="game-feature reveal reveal-delay-1"><span>04</span><h3>Hand Model Animation</h3><p>Model tangan merespons input trigger, grip, dan thumbstick sehingga gerakan controller terlihat lebih hidup dan komunikatif.</p></article>
+      <article class="game-feature reveal"><span>05</span><h3>Grab &amp; Throw</h3><p>Objek yang memiliki collider, rigidbody, dan XR Grab Interactable dapat diambil, dipindahkan, lalu dilempar menggunakan gerakan tangan VR.</p></article>
+      <article class="game-feature reveal reveal-delay-1"><span>06</span><h3>VR–IoT Messaging</h3><p>Sistem menghubungkan VR dengan perangkat IoT untuk mengirim perintah, menerima respons, dan menampilkan status perangkat pada monitor virtual.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--paper2" id="iot-features">
+    <div class="eyebrow reveal">iot features</div>
+    <div class="grid-2 align-end"><h2 class="display display--small reveal">Perintah virtual menghasilkan aksi pada perangkat fisik.</h2><p class="copy reveal reveal-delay-1">Tiga aktuator dapat dikendalikan dari VR, sementara satu sensor mengirimkan data kembali untuk divisualisasikan di dalam aplikasi.</p></div>
+    <div class="game-feature-grid backroom-feature-grid backroom-iot-grid">
+      <article class="game-feature reveal"><span>07</span><h3>LED Control</h3><p>Tombol di ruang virtual mengirim data ke perangkat IoT untuk menyalakan atau mematikan LED sebagai indikator visual.</p></article>
+      <article class="game-feature reveal reveal-delay-1"><span>08</span><h3>Buzzer Control</h3><p>Perintah dari VR dapat mengaktifkan buzzer untuk menghasilkan respons suara pada perangkat IoT.</p></article>
+      <article class="game-feature reveal"><span>09</span><h3>Servo Control</h3><p>Data yang dikirim dari VR digunakan untuk mengubah posisi atau sudut servo sesuai aksi yang dipilih pengguna.</p></article>
+      <article class="game-feature reveal reveal-delay-1"><span>10</span><h3>DHT11 Sensor Display</h3><p>Data suhu dari sensor DHT11 dikirim oleh sistem IoT dan ditampilkan pada panel atau monitor virtual agar dapat dibaca langsung dari VR.</p></article>
+    </div>
+  </section>
+
+  <section class="section project-flow-section">
+    <div class="grid-2 align-end"><div><div class="eyebrow reveal">system workflow</div><h2 class="display display--small reveal">Komunikasi dua arah dari VR ke IoT dan kembali lagi.</h2></div><p class="lead reveal reveal-delay-1">Input controller diproses Unity, dikirim sebagai pesan ke perangkat IoT, menjalankan aktuator, kemudian data sensor dikirim kembali untuk ditampilkan di dunia virtual.</p></div>
+    <div class="project-flow reveal" aria-label="Alur sistem VR dan IoT"><span>Controller input</span><b>→</b><span>Unity XR interaction</span><b>→</b><span>Send IoT message</span><b>→</b><span>LED · buzzer · servo</span><b>→</b><span>DHT11 sensor</span><b>→</b><span>Display in VR</span></div>
+  </section>
+
+  <section class="section section--ink" id="gallery">
+    <div class="eyebrow reveal">development gallery</div>
+    <div class="grid-2 align-end"><h2 class="display display--small reveal">Scene, controller, interaksi, dan perangkat virtual.</h2><p class="copy reveal reveal-delay-1">Galeri menampilkan ruang VR, konfigurasi tombol IoT, objek bola basket yang dapat dipegang, serta pengaturan controller XR.</p></div>
+    <div class="slider-shell project-gallery">
+      <div class="slider-head"><p class="copy">Geser galeri atau gunakan tombol panah.</p><div class="slider-controls"><button class="slider-button" data-slider-prev="backroomGallery" aria-label="Gambar sebelumnya">←</button><button class="slider-button" data-slider-next="backroomGallery" aria-label="Gambar berikutnya">→</button></div></div>
+      <div class="horizontal-slider" id="backroomGallery" data-slider>
+        <article class="slide-card"><div class="slide-card__image"><img src="assets/backroom-end-overview.png" alt="Overview scene laboratorium VR Backroom End di Unity"></div><div class="slide-card__body"><span class="slide-card__num">01 / 04</span><div><h3>VR Laboratory Scene</h3><p>Lingkungan sci-fi menjadi ruang utama untuk menguji locomotion, interaksi objek, controller, serta integrasi perangkat virtual.</p></div></div></article>
+        <article class="slide-card"><div class="slide-card__image"><img src="assets/backroom-end-iot-button.png" alt="Konfigurasi Servo Button dan XR Simple Interactable di Unity"></div><div class="slide-card__body"><span class="slide-card__num">02 / 04</span><div><h3>IoT Control Button</h3><p>Tombol virtual menggunakan XR Simple Interactable dan script khusus untuk mengirim perintah ke LED, buzzer, atau servo.</p></div></div></article>
+        <article class="slide-card"><div class="slide-card__image"><img src="assets/backroom-end-basketball.png" alt="Basketball dengan Rigidbody dan XR Grab Interactable"></div><div class="slide-card__body"><span class="slide-card__num">03 / 04</span><div><h3>Grab &amp; Throw Object</h3><p>Bola basket dilengkapi collider, rigidbody, dan XR Grab Interactable sehingga dapat diambil dan dilempar secara natural.</p></div></div></article>
+        <article class="slide-card"><div class="slide-card__image"><img src="assets/backroom-end-controller.png" alt="Konfigurasi XR Controller Right dan Controller Animator"></div><div class="slide-card__body"><span class="slide-card__num">04 / 04</span><div><h3>Controller &amp; Hand Input</h3><p>Input thumbstick, trigger, dan grip dihubungkan ke animasi controller serta interaksi tangan kanan dalam pengalaman VR.</p></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink project-status-section backroom-status-section">
+    <div class="project-status-grid">
+      <div><div class="eyebrow reveal">project status</div><h2 class="display display--small reveal">Prototipe integrasi XR dan IoT untuk interaksi lintas dunia.</h2></div>
+      <div class="project-facts reveal reveal-delay-1">
+        <div><span>Engine</span><strong>Unity 6.3 LTS</strong></div>
+        <div><span>Platform</span><strong>Android XR · Virtual Reality</strong></div>
+        <div><span>XR System</span><strong>XR Interaction Toolkit</strong></div>
+        <div><span>Locomotion</span><strong>Snap turn · teleportation</strong></div>
+        <div><span>Interaction</span><strong>Hand input · grab · throw</strong></div>
+        <div><span>IoT Output</span><strong>LED · buzzer · servo</strong></div>
+        <div><span>IoT Input</span><strong>DHT11 temperature data</strong></div>
+        <div><span>Project Type</span><strong>VR–IoT integration prototype</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta project-cta backroom-cta"><img src="assets/backroom-end-iot-button.png" alt="Pengaturan tombol IoT dalam proyek Backroom End"><div class="cta__inner"><div class="eyebrow">xr and iot collaboration</div><h2>Interested in an immersive connected system?</h2><p>Hubungi Gunando Dwi Kusuma untuk berdiskusi mengenai prototipe VR, integrasi IoT, aplikasi Unity, interaksi XR, atau eksperimen digital yang menghubungkan ruang virtual dengan perangkat nyata.</p><a class="round-link" href="contact.html">start a<br>conversation</a></div></section>
+</main>
+
+
+<footer class="site-footer"><h2 class="footer-title">stay curious.</h2><div class="footer-grid"><p>Portfolio personal Gunando Dwi Kusuma—dikenal secara online sebagai Doragonnoid—yang menggabungkan pengembangan web, dunia virtual, video game, animasi 3D, VR, IoT, dan eksperimen digital.</p><nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a><a href="about.html">Biography</a><a href="experiences.html">Experiences</a><a href="projects.html">Projects</a><a href="certificates.html">E-Certificates</a><a href="contact.html">Connect</a></nav><nav aria-label="Social links" class="footer-nav"><a href="https://www.youtube.com/@doragonnoid_gunando_nava" rel="noopener" target="_blank">YouTube ↗</a><a href="https://www.instagram.com/doragonnoid_dwi_nava?igsh=MXVrMmJzcGdueThnNA==" rel="noopener" target="_blank">Instagram ↗</a><a href="https://www.tiktok.com/@doragonnoid_dwi_nava?_r=1&amp;_t=ZS-97iYIrTE72y" rel="noopener" target="_blank">TikTok ↗</a><a href="https://www.linkedin.com/in/gunando-dwi-kusuma-a0ba12266?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener" target="_blank">LinkedIn ↗</a><a href="https://www.facebook.com/share/18pqBnQvHw/" rel="noopener" target="_blank">Facebook ↗</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Gunando Dwi Kusuma</span><span>Built as a professional portfolio for projects, collaboration, and creative technology work.</span></div></footer>
+
+
+</body>
+</html>
